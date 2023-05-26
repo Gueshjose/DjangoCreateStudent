@@ -1,1 +1,10 @@
-ex
+{% extends 'students/base.html' %}
+
+{% block content %}
+    <h1>Create a student</h1>
+    <form action="" method="post">
+        {% csrf_token %}
+        {{ form }}
+        <input type="submit" value="create">
+    </form>
+{% endblock content %}
