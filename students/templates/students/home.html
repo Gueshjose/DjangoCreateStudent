@@ -1,0 +1,13 @@
+{% extends 'students/base.html' %}
+
+{% block content %}
+    <!-- All Students -->
+    <h1 class=" uppercase text-4xl font-bold text-center  mt-8">All Students</h1>
+    {% include 'students/home/all.html' %}
+    <!-- Girls Only -->
+    <h1 class=" uppercase text-4xl font-bold text-center text-pink-600">ONLY GIRLS</h1>
+    {% include 'students/home/girls.html' %}
+    <!-- Boyss Only -->
+    <h1 class=" uppercase text-4xl font-bold text-center text-blue-600 ">ONLY Boys</h1>
+    {% include 'students/home/boys.html' %}
+{% endblock content %}

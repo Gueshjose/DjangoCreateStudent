@@ -77,7 +77,7 @@ WSGI_APPLICATION = 'exoCreate2.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'test',
+        'NAME': 'exoCreate',
         'USER' : 'root',
         'PASSWORD' : 'root',
         'HOST' : "127.0.0.1",

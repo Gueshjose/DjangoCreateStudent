@@ -2,7 +2,7 @@
     <div class="container px-4 py-10 mx-auto">
         <div class="grid grid-cols-3 gap-8 mt-8 xl:mt-16 md:grid-cols-4 xl:grid-cols-5">
             {% for student in students  %}
-                {% if student.genre == "H" %}
+                {% if student.genre == "F" %}
                     <div class="flex flex-col items-center shadow-inner shadow-white  p-4 transition-colors duration-300 transform border cursor-pointer rounded-xl hover:border-transparent group {% if student.age >= 24  %} bg-purple-600 {% elif student.age == 22 or student.age == 23 %} bg-blue-600 {% else %} bg-gray-600 {% endif %}dark:border-gray-700 dark:hover:border-transparent">
                         <img class="object-cover w-32 h-32 rounded-full ring-4 ring-gray-300" src="{% if student.genre == 'H'  %} https://e7.pngegg.com/pngimages/949/339/png-clipart-avatar-profile-pic-masculine-man-human-character-person.png {% elif student.genre == 'F' %} https://storage.needpix.com/rsynced_images/profile-2398783_1280.png {% else %} https://static-00.iconduck.com/assets.00/avatar-default-icon-248x256-bdv8pdld.png{% endif %}" alt="">
 
