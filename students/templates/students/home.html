@@ -5,9 +5,12 @@
     <h1 class=" uppercase text-4xl font-bold text-center  mt-8">All Students</h1>
     {% include 'students/home/all.html' %}
     <!-- Girls Only -->
-    <h1 class=" uppercase text-4xl font-bold text-center text-pink-600">ONLY GIRLS</h1>
+    <h1 class=" uppercase text-4xl font-bold text-center text-pink-600 mt-8">ONLY GIRLS</h1>
     {% include 'students/home/girls.html' %}
-    <!-- Boyss Only -->
-    <h1 class=" uppercase text-4xl font-bold text-center text-blue-600 ">ONLY Boys</h1>
+    <!-- Boys Only -->
+    <h1 class=" uppercase text-4xl font-bold text-center text-blue-600 mt-8">ONLY Boys</h1>
     {% include 'students/home/boys.html' %}
+    <!-- Others -->
+    <h1 class=" uppercase text-4xl font-bold text-center text-red-600 mt-8">Others</h1>
+    {% include 'students/home/other.html' %}
 {% endblock content %}

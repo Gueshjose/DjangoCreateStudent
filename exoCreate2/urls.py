@@ -18,6 +18,6 @@ from django.urls import path
 from students import views
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("", views.home),
-    path("create-student/", views.store),
+    path("", views.home, name="home"),
+    path("create-student/", views.store, name="storeStudent"),
 ]
